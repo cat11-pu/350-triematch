@@ -1,8 +1,14 @@
-// trie.js：词表判定与最长前缀（基线：一律当没有）
+// trie.js：词表判定与最长前缀匹配
 export function hasWord(words, word) {
-  return false;
+  return words.indexOf(word) !== -1;
 }
 
 export function longestOf(words, text) {
-  return "";
+  let best = "";
+  for (const word of words) {
+    if (text.startsWith(word) && word.length > best.length) {
+      best = word;
+    }
+  }
+  return best;
 }
