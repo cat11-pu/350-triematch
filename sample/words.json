@@ -1,0 +1,16 @@
+{
+  "budget": 1,
+  "bad_word_code": "E_BAD_WORD",
+  "bad_text_code": "E_BAD_TEXT",
+  "dup_code": "E_DUP_WORD",
+  "no_match_code": "E_NO_MATCH",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "words": [], "records": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "put", "word": "ab" },
+    { "id": 2, "kind": "put", "word": "abc" },
+    { "id": 3, "kind": "match", "text": "abcd" },
+    { "id": 4, "kind": "match", "text": "ab" },
+    { "id": 5, "kind": "put", "word": "abd" }
+  ]
+}
